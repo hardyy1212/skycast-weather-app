@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyCast – Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>🌤️ SkyCast</h1>
+      <p class="tagline">Real-time weather at your fingertips</p>
+    </header>
+
+    <section class="controls">
+      <input id="cityInput" type="text" placeholder="Enter city (e.g., Jaipur)" aria-label="City name" />
+      <button id="searchBtn" aria-label="Search weather">Search</button>
+      <button id="locBtn" class="ghost" aria-label="Use current location">Use my location</button>
+    </section>
+
+    <section id="status" class="status" role="status" aria-live="polite"></section>
+
+    <section id="weatherCard" class="card hidden" aria-hidden="true">
+      <div class="row space-between">
+        <h2 id="cityName" class="city"></h2>
+        <span id="updatedAt" class="updated"></span>
+      </div>
+
+      <div class="row">
+        <img id="weatherIcon" class="icon" alt="Weather icon" />
+        <div class="metrics">
+          <div id="temperature" class="temp"></div>
+          <div id="description" class="desc"></div>
+          <div class="meta">
+            <span id="feelsLike"></span>
+            <span id="humidity"></span>
+            <span id="wind"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Built with ❤️ using the
+        <a href="https://openweathermap.org/api" target="_blank" rel="noreferrer">OpenWeather API</a>.
+      </p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
