@@ -1,6 +1,3 @@
-// SkyCast – simple weather app using OpenWeather Free API
-// 1) Get your free API key -> https://openweathermap.org/api
-// 2) Replace the string below with your key
 const API_KEY = "2e702efb3c924f85c281abba97d77b11";
 
 const els = {
